@@ -17,19 +17,11 @@ PROTOCOL_TO_PORT = ...  # type: Any
 
 def urlquote(url, safe: str = ...): ...
 
-urlquote = ...  # type: Any
-
 def urlquote_plus(url, safe: str = ...): ...
-
-urlquote_plus = ...  # type: Any
 
 def urlunquote(quoted_url): ...
 
-urlunquote = ...  # type: Any
-
 def urlunquote_plus(quoted_url): ...
-
-urlunquote_plus = ...  # type: Any
 
 def urlencode(query, doseq: int = ...): ...
 def cookie_date(epoch_seconds: Optional[Any] = ...): ...

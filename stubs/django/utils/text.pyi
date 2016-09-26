@@ -15,8 +15,6 @@ re_camel_case = ...  # type: Any
 
 def wrap(text, width): ...
 
-wrap = ...  # type: Any
-
 class Truncator(SimpleLazyObject):
     def __init__(self, text) -> None: ...
     def add_truncation_text(self, text, truncate: Optional[Any] = ...): ...
@@ -27,19 +25,11 @@ class Truncator(SimpleLazyObject):
 
 def get_valid_filename(s): ...
 
-get_valid_filename = ...  # type: Any
-
 def get_text_list(list_, last_word: Any = ...): ...
-
-get_text_list = ...  # type: Any
 
 def normalize_newlines(text): ...
 
-normalize_newlines = ...  # type: Any
-
 def phone2numeric(phone): ...
-
-phone2numeric = ...  # type: Any
 
 def compress_string(s): ...
 
@@ -58,14 +48,8 @@ smart_split_re = ...  # type: Any
 def smart_split(text): ...
 def unescape_entities(text): ...
 
-unescape_entities = ...  # type: Any
-
 def unescape_string_literal(s): ...
 
-unescape_string_literal = ...  # type: Any
-
 def slugify(value, allow_unicode: bool = ...): ...
-
-slugify = ...  # type: Any
 
 def camel_case_to_spaces(value): ...
