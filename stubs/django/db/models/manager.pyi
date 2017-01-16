@@ -4,6 +4,9 @@
 
 from typing import Any, Optional
 
+from django.db.models.query import QuerySet
+
+
 def ensure_default_manager(cls): ...
 
 class BaseManager:
@@ -27,7 +30,9 @@ class BaseManager:
     def __ne__(self, other): ...
     def __hash__(self): ...
 
-class Manager: ...
+# bit hacky, QuerySet methods get pulled into manager, but only in a very specific fashion
+# missing (for example) iterators.
+class Manager(BaseManager.from_queryset(QuerySet)): ...
 
 class ManagerDescriptor:
     manager = ...  # type: Any
